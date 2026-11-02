@@ -1,0 +1,24 @@
+
+# Protein Sequence Analysis
+
+protein = input("Enter Protein Sequence: ").upper()
+
+# Protein Length
+print("\nProtein Length:", len(protein))
+
+# Amino Acid Count
+print("\nAmino Acid Count\n")
+
+amino = "ACDEFGHIKLMNPQRSTVWY"
+
+for aa in amino:
+    count = protein.count(aa)
+
+    if count > 0:
+        print(aa, ":", count)
+
+# Approximate Molecular Weight
+weight = len(protein) * 110
+
+print("\nApproximate Molecular Weight:",
+      weight, "Daltons")
